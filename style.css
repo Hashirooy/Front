@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root,
+html,
+body {
+  height: 100%;
+}
+
+.mainPage {
+  height: 100%;
+  width: 100%;
+}
+
+.mainPage_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid grey;
+}
+
+.mainPage__menu {
+  display: flex;
+  margin-right: 550px;
+}
+
+.mainPage__logo {
+  margin-left: 50px;
+  height: 51.83px;
+  width: 190px;
+}
+
+.mainPage__user {
+  height: 30px;
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 15px;
+  color: #6f7682;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainPage_account {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainPage__accountIn {
+  display: flex;
+}
+
+.mainPage__accountImg {
+  margin-right: 15px;
+}
+
+.mainPage_tools {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.mainPage__catalog {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+input {
+  width: 519px;
+  height: 50px;
+  background: #ffffff;
+  padding-left: 15px;
+  border: 1px solid grey;
+}
+button {
+  height: 50px;
+  width: 50px;
+  background: #4798de;
+  cursor: pointer;
+}
+
+.mainPage__search {
+  display: flex;
+  align-items: center;
+}
+
+#mainPage__search {
+  display: flex;
+  align-items: center;
+}
+
+.mainPage__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.mainPage_option {
+  display: flex;
+  flex-direction: row;
+}
+.mainPage__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  height: 30px;
+  width: 30px;
+}
+
+.mainPage_contact a {
+  color: #5ee073;
+}
+
+.imgBanner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainPge__overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 800px;
+  position: absolute;
+  top: 200px;
+  left: 1400px;
+  background-color: aliceblue;
+  opacity: 0.7;
+  gap: 10px;
+}
+
+.mainPge__overlaytext {
+  width: 70%;
+  gap: 20px;
+  padding: 20px;
+}
