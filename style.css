@@ -161,3 +161,16 @@ img {
   gap: 20px;
   padding: 20px;
 }
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+h1 {
+  color: rgba(108, 219, 126, 1);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+}
