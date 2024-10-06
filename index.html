@@ -42,8 +42,8 @@
           </div>
           <div class="mainPage__accountIn">
             <a>Вход</a>
-            <p>/</p>
-            <a>Регистрация</a>
+
+            <a>/ Регистрация</a>
           </div>
         </div>
       </header>
@@ -172,11 +172,11 @@
                 <img class="product_picture" src="./src/img/heat.jfif" alt="" />
               </div>
               <div class="product_description">
-                <p>Наименование</p>
-                <p>Бренд</p>
-                <p>Страна</p>
-                <p>В наличии</p>
-                <p>15 000</p>
+                <p class="product__title">Наименование</p>
+                <p class="country">Бренд:</p>
+                <p class="class">Страна:</p>
+                <p class="product__instock">В наличии</p>
+                <p class="product__price">15 000</p>
               </div>
               <div class="product_options">
                 <button class="product_button">Купить</button>
@@ -193,11 +193,11 @@
                 />
               </div>
               <div class="product_description">
-                <p>Наименование</p>
-                <p>Бренд</p>
-                <p>Страна</p>
-                <p>В наличии</p>
-                <p>15 000</p>
+                <p class="product__title">Наименование</p>
+                <p class="country">Бренд:</p>
+                <p class="class">Страна:</p>
+                <p class="product__instock">В наличии</p>
+                <p class="product__price">15 000</p>
               </div>
               <div class="product_options">
                 <button class="product_button">Купить</button>
@@ -214,11 +214,11 @@
                 />
               </div>
               <div class="product_description">
-                <p>Наименование</p>
-                <p>Бренд</p>
-                <p>Страна</p>
-                <p>В наличии</p>
-                <p>15 000</p>
+                <p class="product__title">Наименование</p>
+                <p class="country">Бренд:</p>
+                <p class="class">Страна:</p>
+                <p class="product__instock">В наличии</p>
+                <p class="product__price">15 000</p>
               </div>
               <div class="product_options">
                 <button class="product_button">Купить</button>
@@ -235,11 +235,11 @@
                 />
               </div>
               <div class="product_description">
-                <p>Наименование</p>
-                <p>Бренд</p>
-                <p>Страна</p>
-                <p>В наличии</p>
-                <p>15 000</p>
+                <p class="product__title">Наименование</p>
+                <p class="country">Бренд:</p>
+                <p class="class">Страна:</p>
+                <p class="product__instock">В наличии</p>
+                <p class="product__price">15 000</p>
               </div>
               <div class="product_options">
                 <button class="product_button">Купить</button>
@@ -259,46 +259,59 @@
           </div>
           <div class="advertise_service">
             <div class="advertise_info">
-              <p>
+              <p class="info__text">
                 Мы не просто продаем товары для ванной - мы помогаем вам найти
                 лучшее решение.
               </p>
             </div>
             <div class="advertise_promo">
               <div class="advertise_promo__element">
-                <img src="./src/img/cart.png" alt="" />
-                <h3></h3>
-                <p></p>
-              </div>
-              <div class="advertise_promo__element">
-                <img src="./src/img/heart.png" alt="" />
-                <h3></h3>
-                <p></p>
-              </div>
-              <div class="advertise_promo__element">
-                <img src="./src/img/thumb-up 1.png" alt="" />
-                <h3></h3>
-                <p></p>
-              </div>
-              <div class="advertise_promo__element">
-                <img src="./src/img/support 2.png" alt="" />
-                <h3></h3>
-                <p></p>
+                <img src="./src/img/Main/transport 3.png" alt="" />
+                <div>
+                  <h3 class="title">ДОСТАВКА</h3>
+                  <p class="about">Доставим товар в удобное для вас время</p>
+                </div>
               </div>
               <div class="advertise_promo__element">
                 <img src="./src/img/Main/transport 3.png" alt="" />
-                <h3></h3>
-                <p></p>
+                <div>
+                  <h3 class="title">КЛИЕНТСКИЙ СЕРВИС</h3>
+                  <p class="about">
+                    Оказываем поддержку на всех этапах покупки товара
+                  </p>
+                </div>
               </div>
               <div class="advertise_promo__element">
-                <img src="./src/img/img.png" alt="" />
-                <h3></h3>
-                <p></p>
+                <img src="./src/img/thumb-up 1.png" alt="" />
+                <div>
+                  <h3 class="title">САМОВЫВОЗ</h3>
+                  <p class="about">
+                    Вы можете самостоятельно забрать заказ в пункте самовывоза.
+                  </p>
+                </div>
               </div>
               <div class="advertise_promo__element">
-                <img src="./src/img/car 1.png" alt="" />
-                <h3></h3>
-                <p></p>
+                <img src="./src/img/support 2.png" alt="" />
+                <div>
+                  <h3 class="title">ГАРАНТИЯ КАЧЕСТВА</h3>
+                  <p class="about">
+                    Соответствуем требованиям и стандартам качества
+                  </p>
+                </div>
+              </div>
+              <div class="advertise_promo__element">
+                <img src="./src/img/Main/transport 3.png" alt="" />
+                <div>
+                  <h3 class="title">ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ</h3>
+                  <p class="about">У нас найдется все.</p>
+                </div>
+              </div>
+              <div class="advertise_promo__element">
+                <img src="./src/img/Main/transport 3.png" alt="" />
+                <div>
+                  <h3 class="title">АКЦИИ И СКИДКИ</h3>
+                  <p class="about">Постоянным клиентам акции и скидки</p>
+                </div>
               </div>
             </div>
           </div>
