@@ -10,7 +10,6 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  padding: 0px 50px 0 50px;
 }
 
 .mainPage_header {
@@ -23,11 +22,12 @@
   border-bottom: 1px solid grey;
   padding-top: 25px;
   padding-bottom: 25px;
+  gap: 10px;
 }
 
 .mainPage__menu {
   display: flex;
-  margin-right: 550px;
+  flex-grow: 1;
 }
 
 .mainPage__logo {
@@ -87,8 +87,8 @@ button {
   gap: 20px;
 }
 input {
-  width: 519px;
   height: 50px;
+  width: 430px;
   background: #ffffff;
   padding-left: 15px;
   border: 1px solid grey;
@@ -201,10 +201,9 @@ h1 {
 
 button {
   width: 140px;
-  height: 40px;
+  height: 45px;
   background-color: rgb(11, 102, 240);
   color: white;
-  margin-left: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -307,7 +306,7 @@ button {
 .heat {
   width: 100%;
   height: 100%;
-  padding: 50px 60px 50px 60px;
+  padding-top: 50px;
 }
 
 .heat__menu {
@@ -330,19 +329,23 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  padding: 0px 50px 0 50px;
 }
 
 .heat_product_card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
-  height: 370px;
+  flex-grow: 1;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .product_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 219px;
   width: 298px;
 }
@@ -359,6 +362,9 @@ button {
   padding-left: 15px;
 }
 
+.mainPage__overlay button {
+  margin-left: 20px;
+}
 .product_options {
   display: flex;
   justify-content: space-around;
@@ -430,10 +436,18 @@ button {
   padding-top: 30px;
   width: 100%;
   height: 500px;
+  justify-content: center;
   display: flex;
   gap: 200px;
   align-items: center;
-  background-image: url(./src/img/baack.png);
+  background-image: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      transparent,
+      transparent,
+      rgb(255, 255, 255)
+    ),
+    url(./src/img/baack.png);
   background-size: 100% auto; /* Растягивается по ширине, высота автоматическая */
   background-position: center; /* Центрирует изображение */
   background-repeat: no-repeat; /* Запрещает повторение */
@@ -489,6 +503,7 @@ button {
   flex-direction: column;
   gap: 20px;
   width: 900px;
+  padding-right: 50px;
 }
 
 .product__price {
@@ -523,4 +538,271 @@ button {
   font-size: 13px;
   line-height: 18px;
   color: Grey;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(241, 242, 246, 1);
+}
+
+.footer-about_contact {
+  display: flex;
+}
+
+.footer-about_contact__client {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_contatc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 75px 0 100px 0px;
+  height: 100%;
+  width: 30%;
+}
+
+.footer__img {
+  width: 190px;
+  height: 50px;
+}
+
+.footer_contatc__media img {
+  width: 35px;
+  height: 35px;
+}
+
+.footer_contatc__payment img {
+  width: 50px;
+  height: 40px;
+}
+
+.footer_contatc__payment p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f7682;
+}
+
+.footer_contatc__media p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f7682;
+}
+.footer_aboutus {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-about_contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 75px;
+}
+
+.footer-about_contact__client {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.footer_backcall {
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: #5ee073;
+}
+
+.footer-about_contact__client h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 45px;
+  color: rgba(21, 36, 79, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .mainPage {
+    padding: 0;
+  }
+  .mainPage__logo {
+    height: 33px;
+    width: 120px;
+    padding-right: 15px;
+  }
+
+  .mainPage__menu {
+    display: flex;
+    margin-right: 0;
+  }
+  .mainPage__accountIn {
+    display: none;
+  }
+
+  .mainPage_account {
+    margin: 0;
+  }
+
+  .mainPage__search input {
+    width: 315px;
+    height: 35px;
+  }
+
+  .mainPage_contact {
+    display: none;
+  }
+  .mainPage__search button {
+    width: 40px;
+    height: 35px;
+  }
+  .mainPage__icon a {
+    display: none;
+  }
+
+  .mainPage_banner {
+    height: 320px;
+  }
+
+  .mainPage__overlaytext {
+    width: 190px;
+    height: 70px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  h1 {
+    color: rgba(108, 219, 126, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .mainPage__overlay button {
+    width: 125px;
+    height: 35px;
+  }
+
+  .mainPage__overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .sale__dic {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(21, 36, 79, 1);
+  }
+
+  .sale__dic2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(241, 242, 246, 1);
+    margin: -20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .mainPage {
+    padding: 0;
+  }
+  .mainPage__logo {
+    height: 33px;
+    width: 120px;
+    padding-right: 15px;
+  }
+
+  .mainPage__menu {
+    display: flex;
+    margin-right: 0;
+  }
+  .mainPage__accountIn {
+    display: none;
+  }
+
+  .mainPage_account {
+    margin: 0;
+  }
+
+  .mainPage__search input {
+    width: 315px;
+    height: 35px;
+  }
+
+  .mainPage_contact {
+    display: none;
+  }
+  .mainPage__search button {
+    width: 40px;
+    height: 35px;
+  }
+  .mainPage__icon a {
+    display: none;
+  }
+
+  .mainPage_banner {
+    height: 320px;
+  }
+
+  .mainPage__overlaytext {
+    width: 190px;
+    height: 70px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  h1 {
+    color: rgba(108, 219, 126, 1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .mainPage__overlay button {
+    width: 125px;
+    height: 35px;
+  }
+
+  .mainPage__overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .product_img {
+    width: 100%;
+  }
+  .heat_product_card:hover .product_options {
+    visibility: visible;
+  }
+
+  .heat_product_card:hover {
+    height: 430px;
+    box-shadow: 0 4px 6px rgba(71, 152, 222, 1);
+  }
+
+  .advertise_service {
+    width: 100%;
+  }
 }
